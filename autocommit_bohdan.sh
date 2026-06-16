@@ -10,7 +10,7 @@ fi
 git add .
 
 # Этап 3: Проверяем, есть ли изменения для коммита
-if git diff-index --quiet HEAD --; then
+if git diff-index --quiet HEAD; then
     echo "Нет изменений для фиксации."
     exit 0
 fi
